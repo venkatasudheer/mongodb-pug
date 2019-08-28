@@ -1,0 +1,23 @@
+
+block content
+
+  if view.length
+    table
+      tr
+        th Title
+        th Handle
+        th Vendor
+        th Type
+        th Published
+      each post in view
+        tr
+          td= post.Handle
+          td= post.Title
+          td= post.Vendor
+          td= post.Type
+          td= post.Published
+  else
+    p No views yet :(
+
+
+
